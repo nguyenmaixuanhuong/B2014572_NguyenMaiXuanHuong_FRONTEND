@@ -9,13 +9,12 @@ const routes = [
     name: "contactbook",
     component: ContactBook,
   },
-  
-  // {
-  //   path: "/contacts/:id",
-  //   name: "contact.edit",
-  //   component: ContactEditView,
-  //   props: true 
-  // },
+  {
+    path: "/contacts/:id",
+    name: "contact.edit",
+    component: ContactEditView,
+    props: true 
+  },
   // {
   //   path: "/contacts/add",
   //   name: "contact.add",
