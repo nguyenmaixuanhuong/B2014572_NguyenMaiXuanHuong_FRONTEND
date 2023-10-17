@@ -1,8 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import ContactBook from "@/views/ContactBook.vue";
 import NotFoundView from "@/views/NotFound.vue";
-// import ContactEditView from "@/views/ContactEdit.vue";
-// import ContactAddView from "@/views/ContactAdd.vue";
+import ContactEditView from "@/views/ContactEdit.vue";
+import ContactAddView from "@/views/ContactAdd.vue";
 const routes = [
   {
     path: "/",
@@ -15,11 +15,11 @@ const routes = [
     component: ContactEditView,
     props: true 
   },
-  // {
-  //   path: "/contacts/add",
-  //   name: "contact.add",
-  //   component: ContactAddView,
-  // },
+  {
+    path: "/contacts/add",
+    name: "contact.add",
+    component: ContactAddView,
+  },
   {
     path: "/:pathMatch(.*)*",
     name: "notfound",
